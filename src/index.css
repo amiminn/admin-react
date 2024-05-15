@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .zoomIn {
+    @apply animate__animated animate__zoomIn s_fast;
+  }
+
+  .zoomOut {
+    @apply animate__animated animate__zoomOut s_fast;
+  }
+}
+
+.s_fast {
+  --animate-duration: 0.5s;
+}
